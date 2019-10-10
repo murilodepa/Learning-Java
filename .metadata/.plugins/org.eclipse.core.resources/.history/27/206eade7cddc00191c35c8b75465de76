@@ -1,0 +1,66 @@
+package logica;
+
+import java.awt.Font;
+import java.awt.Graphics;
+
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+
+public abstract class DesenvolvimentoDoJogo extends JPanel {
+	
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	Font minhaFonte = new Font("Consolas", Font.BOLD, 60);
+	public static int[] vetor = new int[16];
+	int linha = 0, coluna = 0;
+
+	protected JPanel pPos0, pPos1, pPos2, pPos3, pPos4, pPos5, pPos6, pPos7, pPos8, pPos9, pPos10, pPos11, pPos12, pPos13, pPos14, pPos15;
+	protected JLabel lPos0, lPos1, lPos2, lPos3, lPos4, lPos5, lPos6, lPos7, lPos8, lPos9, lPos10, lPos11, lPos12, lPos13, lPos14, lPos15;
+
+	public DesenvolvimentoDoJogo() {	
+	}
+	
+	public abstract JPanel getpPos0();
+	public abstract JPanel getpPos1();
+	public abstract JPanel getpPos2();
+	public abstract JPanel getpPos3();
+	public abstract JPanel getpPos4();
+	public abstract JPanel getpPos5();
+	public abstract JPanel getpPos6();
+	public abstract JPanel getpPos7();
+	public abstract JPanel getpPos8();
+	public abstract JPanel getpPos9();
+	public abstract JPanel getpPos10();
+	public abstract JPanel getpPos11();
+	public abstract JPanel getpPos12();
+	public abstract JPanel getpPos13();
+	public abstract JPanel getpPos14();
+	public abstract JPanel getpPos15();
+
+	public abstract JLabel getlPos0();
+	public abstract JLabel getlPos1();
+	public abstract JLabel getlPos2();
+	public abstract JLabel getlPos3();
+	public abstract JLabel getlPos4();
+	public abstract JLabel getlPos5();
+	public abstract JLabel getlPos6();
+	public abstract JLabel getlPos7();
+	public abstract JLabel getlPos8();
+	public abstract JLabel getlPos9();
+	public abstract JLabel getlPos10();
+	public abstract JLabel getlPos11();
+	public abstract JLabel getlPos12();
+	public abstract JLabel getlPos13();
+	public abstract JLabel getlPos14();
+	public abstract JLabel getlPos15();
+		
+	@Override
+	public void paintComponent(Graphics grafico) {
+
+		grafico.setFont(minhaFonte);
+	}
+	
+	 public abstract void imprimir();
+}

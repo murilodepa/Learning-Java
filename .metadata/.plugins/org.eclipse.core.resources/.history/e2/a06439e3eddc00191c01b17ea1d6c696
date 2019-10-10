@@ -1,0 +1,450 @@
+package logica;
+
+import java.awt.BorderLayout;
+import java.awt.Color;
+import java.awt.Font;
+import java.awt.Graphics;
+
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+
+public class TratandoOsBlocos extends DesenvolvimentoDoJogo {
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	
+	public TratandoOsBlocos() {
+
+		pPos0 = new JPanel();
+		pPos1 = new JPanel();
+		pPos2 = new JPanel();
+		pPos3 = new JPanel();
+		pPos4 = new JPanel();
+		pPos5 = new JPanel();
+		pPos6 = new JPanel();
+		pPos7 = new JPanel();
+		pPos8 = new JPanel();
+		pPos9 = new JPanel();
+		pPos10 = new JPanel();
+		pPos11 = new JPanel();
+		pPos12 = new JPanel();
+		pPos13 = new JPanel();
+		pPos14 = new JPanel();
+		pPos15 = new JPanel();
+
+		lPos0 = new JLabel("2", JLabel.CENTER);
+		lPos1 = new JLabel("2", JLabel.CENTER);
+		lPos2 = new JLabel("2", JLabel.CENTER);
+		lPos3 = new JLabel("2", JLabel.CENTER);
+		lPos4 = new JLabel("2", JLabel.CENTER);
+		lPos5 = new JLabel("2", JLabel.CENTER);
+		lPos6 = new JLabel("2", JLabel.CENTER);
+		lPos7 = new JLabel("2", JLabel.CENTER);
+		lPos8 = new JLabel("2", JLabel.CENTER);
+		lPos9 = new JLabel("2", JLabel.CENTER);
+		lPos10 = new JLabel("2", JLabel.CENTER);
+		lPos11 = new JLabel("2", JLabel.CENTER);
+		lPos12 = new JLabel("2", JLabel.CENTER);
+		lPos13 = new JLabel("2", JLabel.CENTER);
+		lPos14 = new JLabel("2", JLabel.CENTER);
+		lPos15 = new JLabel("2", JLabel.CENTER);
+
+		pPos0.setLayout(new BorderLayout());
+		pPos1.setLayout(new BorderLayout());
+		pPos2.setLayout(new BorderLayout());
+		pPos3.setLayout(new BorderLayout());
+		pPos4.setLayout(new BorderLayout());
+		pPos5.setLayout(new BorderLayout());
+		pPos6.setLayout(new BorderLayout());
+		pPos7.setLayout(new BorderLayout());
+		pPos8.setLayout(new BorderLayout());
+		pPos9.setLayout(new BorderLayout());
+		pPos10.setLayout(new BorderLayout());
+		pPos11.setLayout(new BorderLayout());
+		pPos12.setLayout(new BorderLayout());
+		pPos13.setLayout(new BorderLayout());
+		pPos14.setLayout(new BorderLayout());
+		pPos15.setLayout(new BorderLayout());
+
+		pPos0.add(lPos0);
+		pPos1.add(lPos1);
+		pPos2.add(lPos2);
+		pPos3.add(lPos3);
+		pPos4.add(lPos4);
+		pPos5.add(lPos5);
+		pPos6.add(lPos6);
+		pPos7.add(lPos7);
+		pPos8.add(lPos8);
+		pPos9.add(lPos9);
+		pPos10.add(lPos10);
+		pPos11.add(lPos11);
+		pPos12.add(lPos12);
+		pPos13.add(lPos13);
+		pPos14.add(lPos14);
+		pPos15.add(lPos15);
+	}
+
+	public JPanel getpPos0() {
+		return pPos0;
+	}
+
+	public JPanel getpPos1() {
+		return pPos1;
+	}
+
+	public JPanel getpPos2() {
+		return pPos2;
+	}
+
+	public JPanel getpPos3() {
+		return pPos3;
+	}
+
+	public JPanel getpPos4() {
+		return pPos4;
+	}
+
+	public JPanel getpPos5() {
+		return pPos5;
+	}
+
+	public JPanel getpPos6() {
+		return pPos6;
+	}
+
+	public JPanel getpPos7() {
+		return pPos7;
+	}
+
+	public JPanel getpPos8() {
+		return pPos8;
+	}
+
+	public JPanel getpPos9() {
+		return pPos9;
+	}
+
+	public JPanel getpPos10() {
+		return pPos10;
+	}
+
+	public JPanel getpPos11() {
+		return pPos11;
+	}
+
+	public JPanel getpPos12() {
+		return pPos12;
+	}
+
+	public JPanel getpPos13() {
+		return pPos13;
+	}
+
+	public JPanel getpPos14() {
+		return pPos14;
+	}
+
+	public JPanel getpPos15() {
+		return pPos15;
+	}
+
+	public JLabel getlPos0() {
+		return lPos0;
+	}
+
+	public JLabel getlPos1() {
+		return lPos1;
+	}
+
+	public JLabel getlPos2() {
+		return lPos2;
+	}
+
+	public JLabel getlPos3() {
+		return lPos3;
+	}
+
+	public JLabel getlPos4() {
+		return lPos4;
+	}
+
+	public JLabel getlPos5() {
+		return lPos5;
+	}
+
+	public JLabel getlPos6() {
+		return lPos6;
+	}
+
+	public JLabel getlPos7() {
+		return lPos7;
+	}
+
+	public JLabel getlPos8() {
+		return lPos8;
+	}
+
+	public JLabel getlPos9() {
+		return lPos9;
+	}
+
+	public JLabel getlPos10() {
+		return lPos10;
+	}
+
+	public JLabel getlPos11() {
+		return lPos11;
+	}
+
+	public JLabel getlPos12() {
+		return lPos12;
+	}
+
+	public JLabel getlPos13() {
+		return lPos13;
+	}
+
+	public JLabel getlPos14() {
+		return lPos14;
+	}
+
+	public JLabel getlPos15() {
+		return lPos15;
+	}
+
+	@Override
+	public void paintComponent(Graphics grafico) {
+
+		grafico.setFont(minhaFonte);
+
+		
+		if (vetor[0] == 0) {
+			pPos0.setBounds(97, 167, 106, 106);
+			pPos0.setBackground(Color.red);
+			pPos0.setVisible(false);
+
+			lPos0.setForeground(Color.BLACK);
+			lPos0.setBackground(Color.BLACK);
+			lPos0.setFont(new Font("Arial", Font.BOLD, 60));
+			lPos0.setBorder(javax.swing.BorderFactory.createLineBorder(Color.RED, 1));
+			//lPos0.setVisible(true);
+		}
+
+		if (vetor[1] == 0) {
+			pPos1.setBounds(217, 167, 106, 106);
+			pPos1.setBackground(Color.red);
+			pPos1.setVisible(false);
+
+			lPos1.setForeground(Color.BLACK);
+			lPos1.setBackground(Color.BLACK);
+			lPos1.setFont(new Font("Arial", Font.BOLD, 60));
+			lPos1.setBorder(javax.swing.BorderFactory.createLineBorder(Color.RED, 1));
+			lPos1.setVisible(true);
+		}
+
+		if (vetor[2] == 0) {
+			pPos2.setBounds(337, 167, 106, 106);
+			pPos2.setBackground(Color.red);
+			pPos2.setVisible(false);
+
+			lPos2.setForeground(Color.BLACK);
+			lPos2.setBackground(Color.BLACK);
+			lPos2.setFont(new Font("Arial", Font.BOLD, 60));
+			lPos2.setBorder(javax.swing.BorderFactory.createLineBorder(Color.RED, 1));
+			lPos2.setVisible(true);
+		}
+
+		if (vetor[3] == 0) {
+			pPos3.setBounds(457, 167, 106, 106);
+			pPos3.setBackground(Color.red);
+			pPos3.setVisible(true);
+
+			lPos3.setForeground(Color.BLACK);
+			lPos3.setBackground(Color.BLACK);
+			lPos3.setFont(new Font("Arial", Font.BOLD, 60));
+			lPos3.setBorder(javax.swing.BorderFactory.createLineBorder(Color.RED, 1));
+			lPos3.setVisible(true);
+		}
+
+		if (vetor[4] == 0) {
+			pPos4.setBounds(97, 287, 106, 106);
+			pPos4.setBackground(Color.red);
+			pPos4.setVisible(true);
+
+			lPos4.setForeground(Color.BLACK);
+			lPos4.setBackground(Color.BLACK);
+			lPos4.setFont(new Font("Arial", Font.BOLD, 60));
+			lPos4.setBorder(javax.swing.BorderFactory.createLineBorder(Color.RED, 1));
+			lPos4.setVisible(true);
+		}
+
+		if (vetor[5] == 0) {
+			pPos5.setBounds(217, 287, 106, 106);
+			pPos5.setBackground(Color.red);
+			pPos5.setVisible(true);
+
+			lPos5.setForeground(Color.BLACK);
+			lPos5.setBackground(Color.BLACK);
+			lPos5.setFont(new Font("Arial", Font.BOLD, 60));
+			lPos5.setBorder(javax.swing.BorderFactory.createLineBorder(Color.RED, 1));
+			lPos5.setVisible(true);
+		}
+
+		if (vetor[6] == 0) {
+			pPos6.setBounds(337, 287, 106, 106);
+			pPos6.setBackground(Color.red);
+			pPos6.setVisible(true);
+
+			lPos6.setForeground(Color.BLACK);
+			lPos6.setBackground(Color.BLACK);
+			lPos6.setFont(new Font("Arial", Font.BOLD, 60));
+			lPos6.setBorder(javax.swing.BorderFactory.createLineBorder(Color.RED, 1));
+			lPos6.setVisible(true);
+		}
+
+		if (vetor[7] == 0) {
+			pPos7.setBounds(457, 287, 106, 106);
+			pPos7.setBackground(Color.red);
+			pPos7.setVisible(true);
+
+			lPos7.setForeground(Color.BLACK);
+			lPos7.setBackground(Color.BLACK);
+			lPos7.setFont(new Font("Arial", Font.BOLD, 60));
+			lPos7.setBorder(javax.swing.BorderFactory.createLineBorder(Color.RED, 1));
+			lPos7.setVisible(true);
+		}
+
+		if (vetor[8] == 0) {
+			pPos8.setBounds(97, 407, 106, 106);
+			pPos8.setBackground(Color.red);
+			pPos8.setVisible(true);
+
+			lPos8.setForeground(Color.BLACK);
+			lPos8.setBackground(Color.BLACK);
+			lPos8.setFont(new Font("Arial", Font.BOLD, 60));
+			lPos8.setBorder(javax.swing.BorderFactory.createLineBorder(Color.RED, 1));
+			lPos8.setVisible(true);
+		}
+
+		if (vetor[9] == 0) {
+			pPos9.setBounds(217, 407, 106, 106);
+			pPos9.setBackground(Color.red);
+			pPos9.setVisible(true);
+
+			lPos9.setForeground(Color.BLACK);
+			lPos9.setBackground(Color.BLACK);
+			lPos9.setFont(new Font("Arial", Font.BOLD, 60));
+			lPos9.setBorder(javax.swing.BorderFactory.createLineBorder(Color.RED, 1));
+			lPos9.setVisible(true);
+		}
+
+		if (vetor[10] == 0) {
+			pPos10.setBounds(337, 407, 106, 106);
+			pPos10.setBackground(Color.red);
+			pPos10.setVisible(true);
+
+			lPos10.setForeground(Color.BLACK);
+			lPos10.setBackground(Color.BLACK);
+			lPos10.setFont(new Font("Arial", Font.BOLD, 60));
+			lPos10.setBorder(javax.swing.BorderFactory.createLineBorder(Color.RED, 1));
+			lPos10.setVisible(true);
+		}
+
+		if (vetor[11] == 0) {
+			pPos11.setBounds(457, 407, 106, 106);
+			pPos11.setBackground(Color.red);
+			pPos11.setVisible(true);
+
+			lPos11.setForeground(Color.BLACK);
+			lPos11.setBackground(Color.BLACK);
+			lPos11.setFont(new Font("Arial", Font.BOLD, 60));
+			lPos11.setBorder(javax.swing.BorderFactory.createLineBorder(Color.RED, 1));
+			lPos11.setVisible(true);
+		}
+
+		if (vetor[12] == 0) {
+			pPos12.setBounds(97, 527, 106, 106);
+			pPos12.setBackground(Color.red);
+			pPos12.setVisible(true);
+
+			lPos12.setForeground(Color.BLACK);
+			lPos12.setBackground(Color.BLACK);
+			lPos12.setFont(new Font("Arial", Font.BOLD, 60));
+			lPos12.setBorder(javax.swing.BorderFactory.createLineBorder(Color.RED, 1));
+			lPos12.setVisible(true);
+		}
+
+		if (vetor[13] == 0) {
+			pPos13.setBounds(217, 527, 106, 106);
+			pPos13.setBackground(Color.red);
+			pPos13.setVisible(true);
+
+			lPos13.setForeground(Color.BLACK);
+			lPos13.setBackground(Color.BLACK);
+			lPos13.setFont(new Font("Arial", Font.BOLD, 60));
+			lPos13.setBorder(javax.swing.BorderFactory.createLineBorder(Color.RED, 1));
+			lPos13.setVisible(true);
+		}
+
+		if (vetor[14] == 0) {
+			pPos14.setBounds(337, 527, 106, 106);
+			pPos14.setBackground(Color.red);
+			pPos14.setVisible(true);
+
+			lPos14.setForeground(Color.BLACK);
+			lPos14.setBackground(Color.BLACK);
+			lPos14.setFont(new Font("Arial", Font.BOLD, 60));
+			lPos14.setBorder(javax.swing.BorderFactory.createLineBorder(Color.RED, 1));
+			lPos14.setVisible(true);
+		}
+
+		if (vetor[15] == 0) {
+			pPos15.setBounds(457, 527, 106, 106);
+			pPos15.setBackground(Color.red);
+			pPos15.setVisible(true);
+
+			lPos15.setForeground(Color.BLACK);
+			lPos15.setBackground(Color.BLACK);
+			lPos15.setFont(new Font("Arial", Font.BOLD, 60));
+			lPos15.setBorder(javax.swing.BorderFactory.createLineBorder(Color.RED, 1));
+			lPos15.setVisible(true);
+		}
+	}
+
+	@Override
+	public void imprimir() {
+	}
+	
+	
+	/*
+	public static void esquerda(int a) {
+		int x = 457;
+		MovimentoDoTeclado movimento = new MovimentoDoTeclado();
+	
+		if(vetor[0] == 0 && vetor[1] == 0 && vetor[2] == 0) {
+		System.out.println("aaaaaaaaaaaaaaaaaaaaaa");
+		//pPos3.setBounds(440, 167, 106, 106);
+		x=(x-120);
+		for(int i=0; i<3; i++) {
+			pPos3.setBounds(x, 167, 106, 106);
+			pPos3.setBackground(Color.blue);
+			movimento.add(pPos3);
+			x=(x-120);
+			//pPos3.setBounds(x, 167, 106, 106);
+		}
+		*/
+		//pPos3.setBounds(457, 167, 106, 106);
+		//pPos3.setBounds(97, 167, 106, 106);
+		//pPos3.setBackground(Color.red);
+		//pPos3.setVisible(true);
+		
+		
+		
+	//	pPos0.setBounds(97, 167, 106, 106);
+		
+		}
+	//public abstract void moverComponetes();
+
+

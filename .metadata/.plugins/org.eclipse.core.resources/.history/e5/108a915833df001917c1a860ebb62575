@@ -1,0 +1,321 @@
+package logica;
+
+import java.awt.Color;
+import java.awt.event.KeyEvent;
+import java.awt.event.KeyListener;
+import java.awt.event.MouseEvent;
+import java.awt.event.MouseListener;
+
+import javax.swing.JFrame;
+
+import interfaceGrafica.TelaDoJogo;
+
+public class MovimentoDoTeclado extends JFrame implements MouseListener {
+
+	private Integer cont;
+	private Color corBloco3;
+	private Integer clickX, clickY, soltarX, soltarY;
+	Integer x = 457;
+	int flag1=0;
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
+	public MovimentoDoTeclado() {
+		// new RecursosDaInterfaceGrafica();
+		editarJanela();
+		VerificarBlocos();
+		imprimirLayout();
+		movimentar();
+		// new Movimento().start();
+		addMouseListener(this);
+	}
+
+	public MovimentoDoTeclado(Integer cont) {
+		super();
+		this.cont = cont;
+
+		movimentar();
+	}
+
+	public void editarJanela() {
+		// try {Thread.sleep(3000);} catch(Exception err) {}
+		setTitle("JOGO 2048");
+		setDefaultCloseOperation(DISPOSE_ON_CLOSE);
+		setSize(676, 699);
+		// frame.setResizable(false);
+		setLocationRelativeTo(null);
+		setLayout(null);
+		setVisible(true);
+		//MovingAdapter ma = new MovingAdapter();
+		//addMouseListener(67);
+		//mouseClicked(null);//acao de clike    
+	
+	}
+
+	public void VerificarBlocos() {
+		TratandoOsBlocos telaDoJogoBlocos = new TratandoOsBlocos();
+		telaDoJogoBlocos.setBounds(0, 0, 660, 660);
+
+		if (telaDoJogoBlocos.getpPos0().isVisible()) {
+			add(telaDoJogoBlocos.getpPos0());
+		}
+
+		if (telaDoJogoBlocos.getpPos1().isVisible()) {
+			add(telaDoJogoBlocos.getpPos1());
+		}
+
+		if (telaDoJogoBlocos.getpPos2().isVisible()) {
+			add(telaDoJogoBlocos.getpPos2());
+		}
+
+		if (telaDoJogoBlocos.getpPos3().isVisible()) {
+			add(telaDoJogoBlocos.getpPos3());
+		}
+
+		if (telaDoJogoBlocos.getpPos4().isVisible()) {
+			add(telaDoJogoBlocos.getpPos4());
+		}
+
+		if (telaDoJogoBlocos.getpPos5().isVisible()) {
+			add(telaDoJogoBlocos.getpPos5());
+		}
+
+		if (telaDoJogoBlocos.getpPos6().isVisible()) {
+			add(telaDoJogoBlocos.getpPos6());
+		}
+
+		if (telaDoJogoBlocos.getpPos7().isVisible()) {
+			add(telaDoJogoBlocos.getpPos7());
+		}
+
+		if (telaDoJogoBlocos.getpPos8().isVisible()) {
+			add(telaDoJogoBlocos.getpPos8());
+		}
+
+		if (telaDoJogoBlocos.getpPos9().isVisible()) {
+			add(telaDoJogoBlocos.getpPos9());
+		}
+
+		if (telaDoJogoBlocos.getpPos10().isVisible()) {
+			add(telaDoJogoBlocos.getpPos10());
+		}
+
+		if (telaDoJogoBlocos.getpPos11().isVisible()) {
+			add(telaDoJogoBlocos.getpPos11());
+		}
+
+		if (telaDoJogoBlocos.getpPos12().isVisible()) {
+			add(telaDoJogoBlocos.getpPos12());
+		}
+
+		if (telaDoJogoBlocos.getpPos13().isVisible()) {
+			add(telaDoJogoBlocos.getpPos13());
+		}
+
+		if (telaDoJogoBlocos.getpPos14().isVisible()) {
+			add(telaDoJogoBlocos.getpPos14());
+		}
+
+		if (telaDoJogoBlocos.getpPos15().isVisible()) {
+			add(telaDoJogoBlocos.getpPos15());
+		}
+
+		add(telaDoJogoBlocos);
+
+	}
+
+	public void imprimirLayout() {
+		TelaDoJogo telaDoJogo = new TelaDoJogo();
+		telaDoJogo.setBounds(0, 0, 660, 660);
+		add(telaDoJogo.getPainelLogo());
+		add(telaDoJogo);
+	}
+
+	public void movimentar() {
+		addKeyListener(new KeyListener() {
+
+			@Override
+			public void keyTyped(KeyEvent e) {
+			}
+
+			@Override
+			public void keyReleased(KeyEvent e) {
+			}
+
+			
+
+			@Override
+			public void keyPressed(KeyEvent e) {
+				// System.out.println(e.getKeyCode());
+				if (e.getKeyCode() == 37 || e.getKeyCode() == 65) {
+					System.out.println(x);
+					
+					//for(int i=0; i<100000; i++) {
+					//corBloco3 = new Color(222, 178, 255);
+					//TratandoOsBlocos.setX(x);
+					//TratandoOsBlocos.setCorBloco3(corBloco3);
+					//TratandoOsBlocos.pPos3.setBackground(corBloco3);
+
+					TratandoOsBlocos.pPos3.setBackground(corBloco3);
+					flag1=1;
+					// lPos4.setForeground(Color.BLACK);
+					// lPos4.setBackground(Color.BLACK);
+					//x = (x - 10);
+					// TratandoOsBlocos.lPos3.setText("4");
+					
+					//TratandoOsBlocos.setX(x);
+					//TratandoOsBlocos.pPos3.setBounds(x, 167, 106, 106);
+
+					
+					
+					//try {
+					//	Thread.sleep(10);
+					//} catch (Exception erro) {
+					//}
+				//	}
+
+					// pPos3.setBounds(x, 167, 106, 106);
+					// TelaDoJogo telaDoJogo = new TelaDoJogo();
+					// telaDoJogo.setBounds(0, 0, 660, 660);
+					// add(telaDoJogo.getPainelLogo());
+					// add(telaDoJogo);
+					// TratandoOsBlocos.esquerda(1);
+					// System.out.println("Esquerda");
+
+					// for(int i=0; i<3; i++) {
+
+					// TratandoOsBlocos.pPos3.setBackground(Color.blue);
+					// TratandoOsBlocos.pPos3.setBounds(0, 167, 106, 106);
+					// add(TratandoOsBlocos.pPos3);
+
+					// x=(x-120);
+					// }//pPos3.setBounds(x, 167, 106, 106);
+
+				}
+
+				if (e.getKeyCode() == 38 || e.getKeyCode() == 87) {
+					// System.out.println("Cima");
+				}
+
+				if (e.getKeyCode() == 39 || e.getKeyCode() == 68) {
+					// System.out.println("Direita");
+				}
+
+				if (e.getKeyCode() == 40 || e.getKeyCode() == 83) {
+					// System.out.println("Baixo");
+				}
+			}
+		});
+	}
+
+	@Override
+	public void mouseClicked(MouseEvent e) {
+		try {
+		clickX = e.getX();
+		clickY = e.getY();
+		//System.out.println(e.getX() + ", " + e.getY());
+		System.out.printf("Clickx: %d, ClickY: %d", clickX, clickY);
+		}
+		catch(java.lang.NullPointerException e1) {}
+	}
+
+	@Override
+	public void mouseExited(MouseEvent e) {
+
+	}
+
+	@Override
+	public void mousePressed(MouseEvent e) {
+		
+	}
+
+	@Override
+	public void mouseReleased(MouseEvent e) {
+		try {
+		//System.out.println(e.getX() + ", " + e.getY());
+		soltarX = e.getX();
+		soltarY = e.getY();
+			
+		System.out.println("click x: " + clickX + " clickY: " +  clickY + "\nsoltarX: " + soltarX + " soltarY: " + soltarY);
+
+		if (soltarX < clickX && soltarY < clickY) {
+		}
+
+		if (soltarX > clickY && soltarY > clickY) {
+		}
+
+		if (soltarX > clickY && soltarY < clickY) {
+		}
+
+		if (soltarX < clickY && soltarY > clickY) {
+		}
+		}
+		catch(java.lang.NullPointerException e1) {}
+		}
+
+	@Override
+	public void mouseEntered(MouseEvent arg0) {
+		// TODO Auto-generated method stub
+
+	}
+	
+	public Integer getSoltarX() {
+		return soltarX;
+	}
+
+	public void setSoltarX(Integer soltarX) {
+		this.soltarX = soltarX;
+	}
+
+	public Integer getClickX() {
+		return clickX;
+	}
+
+	public void setClickX(Integer clickX) {
+		this.clickX = clickX;
+	}
+
+	public Integer getSoltarY() {
+		return soltarY;
+	}
+
+	public void setSoltarY(Integer soltarY) {
+		this.soltarY = soltarY;
+	}
+
+	public Integer getClickY() {
+		return clickY;
+	}
+
+	public void setClickY(Integer clickY) {
+		this.clickY = clickY;
+	}
+
+	public class Movimento extends Thread {
+		public void run() {
+			while (true) {
+				try {sleep(10);} catch (Exception erro) {}
+	if(x!=97 && flag1==1) {
+
+		TratandoOsBlocos.setX(x);
+		TratandoOsBlocos.pPos3.setBounds(x, 167, 106, 106);
+		x=(x-1);	
+				}
+	flag1=0;
+
+			}
+		}
+	}
+
+	public Integer getCont() {
+		return cont;
+	}
+
+	public void setCont(Integer cont) {
+		this.cont = cont;
+	}
+
+
+}

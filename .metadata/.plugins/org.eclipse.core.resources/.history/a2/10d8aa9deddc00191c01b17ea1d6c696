@@ -1,0 +1,33 @@
+package aplicação;
+
+import javax.swing.SwingUtilities;
+
+import logica.MovimentoDoTeclado;
+
+public class Main {
+
+	public Main() {
+	}
+
+	public static void main(String[] args) {
+		
+		int x = 0;
+		
+		SwingUtilities.invokeLater(new Runnable(){
+			public void run() {
+	    MovimentoDoTeclado movimento = new MovimentoDoTeclado();	
+	    if(x==0) {
+	    movimento.editarJanela();
+		movimento.imprimirLayout();
+	    }
+	    x=1;
+			}
+		});
+		
+		System.out.println("ababababababa");
+		
+		
+		//new ManipulandoOVetorDosBlocos();
+			
+		}
+}

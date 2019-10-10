@@ -1,0 +1,22 @@
+package aplicação;
+
+import logica.MovimentoDoTeclado;
+
+public class Main {
+
+	public Main () {
+		//MovimentoDoTeclado movimentoDoTeclado = new MovimentoDoTeclado();	
+		//movimentoDoTeclado.moverComponetes();
+	}
+	public static void main(String[] args) {
+		
+		//MovimentoDoTeclado movimentoDoTeclado = new MovimentoDoTeclado();	
+		//movimentoDoTeclado.moverComponetes();
+		//System.out.println("aaa");
+		new MovimentoDoTeclado();
+		
+		
+		
+	}
+
+}

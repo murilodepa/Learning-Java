@@ -1,0 +1,16 @@
+package aplicação;
+
+import interfaceGrafica.RecursosDaInterfaceGrafica;
+import logica.MovimentoDoTeclado;
+
+public class Main {
+
+	public static void main(String[] args) {
+		new RecursosDaInterfaceGrafica();
+		
+		
+		MovimentoDoTeclado movimentoDoTeclado = new MovimentoDoTeclado();	
+		movimentoDoTeclado.moverComponetes();
+	}
+
+}

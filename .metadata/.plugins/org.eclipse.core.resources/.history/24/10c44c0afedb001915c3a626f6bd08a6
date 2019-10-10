@@ -1,0 +1,33 @@
+package aplicação;
+
+import interfaceGrafica.RecursosDoJFrame;
+
+public class Main {
+
+	public static void main(String[] args) {
+	/*	
+	JFrame frame = new JFrame("JOGO 2048");
+	frame.setSize(667, 690);
+	frame.setExtendedState(0);
+	//frame.setResizable(false);
+	//frame.setMaximumSize();
+	frame.setLocationRelativeTo(null);
+	//frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+	frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+	frame.setVisible(true);
+	
+	
+	DesenvolvimentoDoJogo desenvolvimentoDoJogo = new DesenvolvimentoDoJogo();
+	desenvolvimentoDoJogo.setBounds(0, 0, 651, 651);
+	frame.add(desenvolvimentoDoJogo);
+	
+	TelaDoJogo telaDoJogo = new TelaDoJogo();
+	telaDoJogo.setBounds(0, 0, 651, 651);
+	frame.add(telaDoJogo);
+	*/
+		
+	RecursosDoJFrame.imprimirTelaDoJogo();	
+
+	}
+
+}

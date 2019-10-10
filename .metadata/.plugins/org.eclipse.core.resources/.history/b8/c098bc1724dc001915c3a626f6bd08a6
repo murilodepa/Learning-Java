@@ -1,0 +1,71 @@
+package logica;
+
+import java.awt.Color;
+import java.awt.Component;
+import java.awt.Font;
+import java.awt.Graphics;
+import java.util.ArrayList;
+import java.util.List;
+
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+
+public class DesenvolvimentoDoJogo extends JPanel {
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	Font minhaFonte = new Font("Consolas", Font.BOLD, 60);
+	public static int[] vetor = new int[16];
+	int linha = 0, coluna = 0;
+	
+	public JPanel[] pPos;
+	private JLabel[] lPos = new JLabel[16];
+
+	// private JPanel pPos0, pPos1, pPos2, pPos3, pPos4, pPos5, pPos6, pPos7, pPos8;
+	// private JLabel lPos0, lPos1, lPos2, lPos3, lPos4, lPos5, lPos6, lPos7, lPos8;
+
+	public DesenvolvimentoDoJogo() {
+		pPos = new JPanel[1];
+	}
+
+	/*
+	 * public JPanel getpPos(int i) { return pPos[i]; }
+	 * 
+	 * 
+	 * public static int[] getVetor() { return vetor; }
+	 * 
+	 * public JLabel[] getlPos() { return lPos; }
+	 */
+
+	@Override
+	public void paintComponent(Graphics grafico) {
+
+		grafico.setFont(minhaFonte);
+
+		//pPos[0].setBounds(260, 200, 5, 5);
+		pPos.setBackground(Color.BLACK);
+		//((Component) lista).setVisible(true);
+		grafico.drawString("" + pPos[0], 50 + coluna * 200, 50 + linha * 200);
+		
+
+		// lPos[i].setForeground(Color.white);
+		// lPos[i].setBackground(Color.white);
+
+		// lPos[i].setFont(new Font("Arial", Font.BOLD, 50));
+		// lPos[i].setBackground(Color.YELLOW);
+		// lPos[i].setVisible(true);
+
+		/*
+		 * //grafico.drawString("" + vetor[i], 50 + coluna*200, 50 + linha*200); //
+		 * coluna=(coluna+1); // if(coluna==4) { // coluna=0; // linha=(linha+1); //} }
+		 * 
+		 * }
+		 */
+		/*
+		 * public static void imprimir(){ for (int i = 0; i < 16; i++) { if (i == 4 || i
+		 * == 8 || i == 12 || i == 16) { System.out.println(""); }
+		 * System.out.print(vetor[i]);
+		 */
+	}
+}

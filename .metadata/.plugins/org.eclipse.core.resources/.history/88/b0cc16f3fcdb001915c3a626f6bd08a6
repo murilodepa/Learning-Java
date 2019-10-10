@@ -1,0 +1,20 @@
+package interfaceGrafica;
+
+import javax.swing.JFrame;
+
+import interfaceGrafica.TelaDoJogo;
+import logica.DesenvolvimentoDoJogo;
+
+public class RecursosDoJFrame {
+	
+	JFrame frame = new JFrame("JOGO 2048");
+	frame.setSize(667, 690);
+	frame.setExtendedState(0);
+	//frame.setResizable(false);
+	//frame.setMaximumSize();
+	frame.setLocationRelativeTo(null);
+	//frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+	frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+	frame.setVisible(true);
+
+}

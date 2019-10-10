@@ -1,0 +1,222 @@
+package logica;
+
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+
+public class ManipulandoOVetorDosBlocos extends DesenvolvimentoDoJogo{
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	
+	public ManipulandoOVetorDosBlocos() {
+		imprimir();
+	}
+
+	@Override
+	public JPanel getpPos0() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public JPanel getpPos1() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public JPanel getpPos2() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public JPanel getpPos3() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public JPanel getpPos4() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public JPanel getpPos5() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public JPanel getpPos6() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public JPanel getpPos7() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public JPanel getpPos8() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public JPanel getpPos9() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public JPanel getpPos10() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public JPanel getpPos11() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public JPanel getpPos12() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public JPanel getpPos13() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public JPanel getpPos14() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public JPanel getpPos15() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public JLabel getlPos0() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public JLabel getlPos1() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public JLabel getlPos2() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public JLabel getlPos3() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public JLabel getlPos4() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public JLabel getlPos5() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public JLabel getlPos6() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public JLabel getlPos7() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public JLabel getlPos8() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public JLabel getlPos9() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public JLabel getlPos10() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public JLabel getlPos11() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public JLabel getlPos12() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public JLabel getlPos13() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public JLabel getlPos14() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public JLabel getlPos15() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void imprimir() {
+			 for (int i = 0; i < 16; i++) {
+				 if (i == 4 || i == 8 || i == 12 || i == 16) { 
+					 System.out.println(""); 
+					 }
+		 System.out.print(vetor[i]);
+			 }
+		 }
+		
+	}
+
+	
+

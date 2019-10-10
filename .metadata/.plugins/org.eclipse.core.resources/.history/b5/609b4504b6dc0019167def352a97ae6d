@@ -1,0 +1,35 @@
+package interfaceGrafica;
+
+import javax.swing.JFrame;
+
+import logica.MovimentoDoTeclado;
+import logica.TratandoOsBlocos;
+
+public class RecursosDaInterfaceGrafica extends JFrame {
+	
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
+	public RecursosDaInterfaceGrafica() {
+		/*
+				JFrame frame = new JFrame("JOGO 2048");
+				frame.setSize(676, 699);
+				frame.setExtendedState(0);
+				//frame.setResizable(false);
+				frame.setLocationRelativeTo(null);
+				frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+				frame.setVisible(true);
+				
+				
+				
+				new MovimentoDoTeclado();
+				//MovimentoDoTeclado mover = new MovimentoDoTeclado();
+				//mover.setBounds(0, 0, 660, 600);
+				//frame.add(mover);
+				//mover.movimentar(); */
+	}
+	
+}
+	

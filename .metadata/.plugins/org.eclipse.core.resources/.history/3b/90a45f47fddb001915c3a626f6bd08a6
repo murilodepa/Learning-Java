@@ -1,0 +1,8 @@
+package interfaceGrafica;
+
+public class RecursosDoJFrame {
+
+	public RecursosDoJFrame() {
+		
+	}
+}

@@ -1,0 +1,354 @@
+package logica;
+
+import java.awt.Font;
+import java.awt.Graphics;
+
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+
+public abstract class DesenvolvimentoDoJogo extends JPanel {
+	
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	Font minhaFonte = new Font("Consolas", Font.BOLD, 60);
+	public static int[] vetor = new int[16];
+	int linha = 0, coluna = 0;
+
+	protected static JPanel pPos0;
+	protected static JPanel pPos1;
+	protected static JPanel pPos2;
+	protected static JPanel pPos3;
+	protected static JPanel pPos4;
+	protected static JPanel pPos5;
+	protected static JPanel pPos6;
+	protected static JPanel pPos7;
+	protected static JPanel pPos8;
+	protected static JPanel pPos9;
+	protected static JPanel pPos10;
+	protected static JPanel pPos11;
+	protected static JPanel pPos12;
+	protected static JPanel pPos13;
+	protected static JPanel pPos14;
+	protected static JPanel pPos15;
+	protected JLabel lPos0, lPos1, lPos2;
+	protected static JLabel lPos3;
+	protected JLabel lPos4;
+	protected JLabel lPos5;
+	protected JLabel lPos6;
+	protected JLabel lPos7;
+	protected JLabel lPos8;
+	protected JLabel lPos9;
+	protected JLabel lPos10;
+	protected JLabel lPos11;
+	protected JLabel lPos12;
+	protected JLabel lPos13;
+	protected JLabel lPos14;
+	protected JLabel lPos15;
+	
+	private static Integer p0x=97, p1x=217, p2x=337, p3x=457, p4x=97, p5x=217, p6x=337, p7x=457, p8x=97, p9x=217, p10x=337, p11x=457, p12x=97, p13x=217, p14x=337, p15x=457;
+	private static Integer p0y=167, p1y=167, p2y=167, p3y=167, p4y=217, p5y=217, p6y=217, p7y=217, p8y=407, p9y=407, p10y=407, p11y=407, p12y=527, p13y=527, p14y=527, p15y=527;	
+	
+
+	public DesenvolvimentoDoJogo() {	
+	}
+	
+	public abstract JPanel getpPos0();
+	public abstract JPanel getpPos1();
+	public abstract JPanel getpPos2();
+	public abstract JPanel getpPos3();
+	public abstract JPanel getpPos4();
+	public abstract JPanel getpPos5();
+	public abstract JPanel getpPos6();
+	public abstract JPanel getpPos7();
+	public abstract JPanel getpPos8();
+	public abstract JPanel getpPos9();
+	public abstract JPanel getpPos10();
+	public abstract JPanel getpPos11();
+	public abstract JPanel getpPos12();
+	public abstract JPanel getpPos13();
+	public abstract JPanel getpPos14();
+	public abstract JPanel getpPos15();
+
+	public abstract JLabel getlPos0();
+	public abstract JLabel getlPos1();
+	public abstract JLabel getlPos2();
+	public abstract JLabel getlPos3();
+	public abstract JLabel getlPos4();
+	public abstract JLabel getlPos5();
+	public abstract JLabel getlPos6();
+	public abstract JLabel getlPos7();
+	public abstract JLabel getlPos8();
+	public abstract JLabel getlPos9();
+	public abstract JLabel getlPos10();
+	public abstract JLabel getlPos11();
+	public abstract JLabel getlPos12();
+	public abstract JLabel getlPos13();
+	public abstract JLabel getlPos14();
+	public abstract JLabel getlPos15();
+	
+	public static Integer getP0x() {
+		return p0x;
+	}
+
+	public static void setP0x(Integer p0x) {
+		DesenvolvimentoDoJogo.p0x = p0x;
+	}
+
+	public static Integer getP1x() {
+		return p1x;
+	}
+
+	public static void setP1x(Integer p1x) {
+		DesenvolvimentoDoJogo.p1x = p1x;
+	}
+
+	public static Integer getP2x() {
+		return p2x;
+	}
+
+	public static void setP2x(Integer p2x) {
+		DesenvolvimentoDoJogo.p2x = p2x;
+	}
+
+	public static Integer getP3x() {
+		return p3x;
+	}
+
+	public static void setP3x(Integer p3x) {
+		DesenvolvimentoDoJogo.p3x = p3x;
+	}
+
+	public static Integer getP4x() {
+		return p4x;
+	}
+
+	public static void setP4x(Integer p4x) {
+		DesenvolvimentoDoJogo.p4x = p4x;
+	}
+
+	public static Integer getP5x() {
+		return p5x;
+	}
+
+	public static void setP5x(Integer p5x) {
+		DesenvolvimentoDoJogo.p5x = p5x;
+	}
+
+	public static Integer getP6x() {
+		return p6x;
+	}
+
+	public static void setP6x(Integer p6x) {
+		DesenvolvimentoDoJogo.p6x = p6x;
+	}
+
+	public static Integer getP7x() {
+		return p7x;
+	}
+
+	public static void setP7x(Integer p7x) {
+		DesenvolvimentoDoJogo.p7x = p7x;
+	}
+
+	public static Integer getP8x() {
+		return p8x;
+	}
+
+	public static void setP8x(Integer p8x) {
+		DesenvolvimentoDoJogo.p8x = p8x;
+	}
+
+	public static Integer getP9x() {
+		return p9x;
+	}
+
+	public static void setP9x(Integer p9x) {
+		DesenvolvimentoDoJogo.p9x = p9x;
+	}
+
+	public static Integer getP10x() {
+		return p10x;
+	}
+
+	public static void setP10x(Integer p10x) {
+		DesenvolvimentoDoJogo.p10x = p10x;
+	}
+
+	public static Integer getP11x() {
+		return p11x;
+	}
+
+	public static void setP11x(Integer p11x) {
+		DesenvolvimentoDoJogo.p11x = p11x;
+	}
+
+	public static Integer getP12x() {
+		return p12x;
+	}
+
+	public static void setP12x(Integer p12x) {
+		DesenvolvimentoDoJogo.p12x = p12x;
+	}
+
+	public static Integer getP13x() {
+		return p13x;
+	}
+
+	public static void setP13x(Integer p13x) {
+		DesenvolvimentoDoJogo.p13x = p13x;
+	}
+
+	public static Integer getP14x() {
+		return p14x;
+	}
+
+	public static void setP14x(Integer p14x) {
+		DesenvolvimentoDoJogo.p14x = p14x;
+	}
+
+	public static Integer getP15x() {
+		return p15x;
+	}
+
+	public static void setP15x(Integer p15x) {
+		DesenvolvimentoDoJogo.p15x = p15x;
+	}
+
+	public static Integer getP0y() {
+		return p0y;
+	}
+
+	public static void setP0y(Integer p0y) {
+		DesenvolvimentoDoJogo.p0y = p0y;
+	}
+
+	public static Integer getP1y() {
+		return p1y;
+	}
+
+	public static void setP1y(Integer p1y) {
+		DesenvolvimentoDoJogo.p1y = p1y;
+	}
+
+	public static Integer getP2y() {
+		return p2y;
+	}
+
+	public static void setP2y(Integer p2y) {
+		DesenvolvimentoDoJogo.p2y = p2y;
+	}
+
+	public static Integer getP3y() {
+		return p3y;
+	}
+
+	public static void setP3y(Integer p3y) {
+		DesenvolvimentoDoJogo.p3y = p3y;
+	}
+
+	public static Integer getP4y() {
+		return p4y;
+	}
+
+	public static void setP4y(Integer p4y) {
+		DesenvolvimentoDoJogo.p4y = p4y;
+	}
+
+	public static Integer getP5y() {
+		return p5y;
+	}
+
+	public static void setP5y(Integer p5y) {
+		DesenvolvimentoDoJogo.p5y = p5y;
+	}
+
+	public static Integer getP6y() {
+		return p6y;
+	}
+
+	public static void setP6y(Integer p6y) {
+		DesenvolvimentoDoJogo.p6y = p6y;
+	}
+
+	public static Integer getP7y() {
+		return p7y;
+	}
+
+	public static void setP7y(Integer p7y) {
+		DesenvolvimentoDoJogo.p7y = p7y;
+	}
+
+	public static Integer getP8y() {
+		return p8y;
+	}
+
+	public static void setP8y(Integer p8y) {
+		DesenvolvimentoDoJogo.p8y = p8y;
+	}
+
+	public static Integer getP9y() {
+		return p9y;
+	}
+
+	public static void setP9y(Integer p9y) {
+		DesenvolvimentoDoJogo.p9y = p9y;
+	}
+
+	public static Integer getP10y() {
+		return p10y;
+	}
+
+	public static void setP10y(Integer p10y) {
+		DesenvolvimentoDoJogo.p10y = p10y;
+	}
+
+	public static Integer getP11y() {
+		return p11y;
+	}
+
+	public static void setP11y(Integer p11y) {
+		DesenvolvimentoDoJogo.p11y = p11y;
+	}
+
+	public static Integer getP12y() {
+		return p12y;
+	}
+
+	public static void setP12y(Integer p12y) {
+		DesenvolvimentoDoJogo.p12y = p12y;
+	}
+
+	public static Integer getP13y() {
+		return p13y;
+	}
+
+	public static void setP13y(Integer p13y) {
+		DesenvolvimentoDoJogo.p13y = p13y;
+	}
+
+	public static Integer getP14y() {
+		return p14y;
+	}
+
+	public static void setP14y(Integer p14y) {
+		DesenvolvimentoDoJogo.p14y = p14y;
+	}
+
+	public static Integer getP15y() {
+		return p15y;
+	}
+
+	public static void setP15y(Integer p15y) {
+		DesenvolvimentoDoJogo.p15y = p15y;
+	}
+
+	@Override
+	public void paintComponent(Graphics grafico) {
+
+		grafico.setFont(minhaFonte);
+	}
+	
+	 public abstract void imprimir();
+}

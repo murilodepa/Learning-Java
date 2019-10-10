@@ -1,0 +1,38 @@
+package interfaceGrafica;
+
+import javax.swing.JFrame;
+
+import logica.DesenvolvimentoDoJogo;
+
+public class RecursosDoJFrame {
+
+	JFrame frame = new JFrame("JOGO 2048");
+	public RecursosDoJFrame() {
+		
+		frame.setSize(667, 690);
+		frame.setExtendedState(0);
+		//frame.setResizable(false);
+		//frame.setMaximumSize();
+		frame.setLocationRelativeTo(null);
+		//frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		frame.setVisible(true);
+		
+		TelaDoJogo telaDoJogo = new TelaDoJogo();
+		telaDoJogo.setBounds(0, 0, 651, 651);
+		frame.add(telaDoJogo);
+	}
+	
+	public void imprimirDesenvolvimentoDoJogo() { 
+	DesenvolvimentoDoJogo desenvolvimentoDoJogo = new DesenvolvimentoDoJogo();
+	desenvolvimentoDoJogo.setBounds(0, 0, 651, 651);
+	frame.add(desenvolvimentoDoJogo);
+	}
+	
+	public void imprimirTelaDoJogo() {
+		DesenvolvimentoDoJogo desenvolvimentoDoJogo = new DesenvolvimentoDoJogo();
+		desenvolvimentoDoJogo.setBounds(0, 0, 651, 651);
+		frame.add(desenvolvimentoDoJogo);	
+	}
+	
+}

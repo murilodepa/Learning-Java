@@ -1,0 +1,10 @@
+package teclado;
+
+public class Controle {
+	
+	public void Mover() {
+		
+		addKeyListener(new KeyListener());
+	}
+
+}

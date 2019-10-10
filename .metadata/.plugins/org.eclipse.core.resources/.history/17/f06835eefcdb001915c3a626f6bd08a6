@@ -1,0 +1,25 @@
+package aplicação;
+
+import javax.swing.JFrame;
+
+import interfaceGrafica.TelaDoJogo;
+import logica.DesenvolvimentoDoJogo;
+
+public class Main {
+
+	public static void main(String[] args) {
+
+	
+	
+	DesenvolvimentoDoJogo desenvolvimentoDoJogo = new DesenvolvimentoDoJogo();
+	desenvolvimentoDoJogo.setBounds(0, 0, 651, 651);
+	frame.add(desenvolvimentoDoJogo);
+	
+	TelaDoJogo telaDoJogo = new TelaDoJogo();
+	telaDoJogo.setBounds(0, 0, 651, 651);
+	frame.add(telaDoJogo);
+	
+
+	}
+
+}

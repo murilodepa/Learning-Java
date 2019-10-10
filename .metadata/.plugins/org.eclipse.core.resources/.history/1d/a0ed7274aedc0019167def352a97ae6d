@@ -1,0 +1,101 @@
+package interfaceGrafica;
+
+import javax.swing.JFrame;
+
+import logica.MovimentoDoTeclado;
+import logica.TratandoOsBlocos;
+
+public class RecursosDaInterfaceGrafica extends JFrame {
+	
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
+	public RecursosDaInterfaceGrafica() {
+				
+				//MovimentoDoTeclado frame = new MovimentoDoTeclado();
+				new MovimentoDoTeclado();
+				TratandoOsBlocos telaDoJogoBlocos = new TratandoOsBlocos();
+				telaDoJogoBlocos.setBounds(0, 0, 660, 660);
+				
+				if(telaDoJogoBlocos.getpPos0().isVisible()) {
+				frame.editarJanela();
+				add(telaDoJogoBlocos.getpPos0());
+				}
+				
+				if(telaDoJogoBlocos.getpPos1().isVisible()) {
+				frame.add(telaDoJogoBlocos.getpPos1());
+				}
+				
+				if(telaDoJogoBlocos.getpPos2().isVisible()) {
+				frame.add(telaDoJogoBlocos.getpPos2());
+				}
+				
+				if(telaDoJogoBlocos.getpPos3().isVisible()) {
+				frame.add(telaDoJogoBlocos.getpPos3());
+				}
+				
+				if(telaDoJogoBlocos.getpPos4().isVisible()) {
+				frame.add(telaDoJogoBlocos.getpPos4());
+				}
+				
+				if(telaDoJogoBlocos.getpPos5().isVisible()) {
+				frame.add(telaDoJogoBlocos.getpPos5());
+				}
+				
+				if(telaDoJogoBlocos.getpPos6().isVisible()) {
+				frame.add(telaDoJogoBlocos.getpPos6());
+				}
+				
+				if(telaDoJogoBlocos.getpPos7().isVisible()) {
+				frame.add(telaDoJogoBlocos.getpPos7());
+				}
+				
+				if(telaDoJogoBlocos.getpPos8().isVisible()) {
+				frame.add(telaDoJogoBlocos.getpPos8());
+				}
+				
+				if(telaDoJogoBlocos.getpPos9().isVisible()) {
+				frame.add(telaDoJogoBlocos.getpPos9());
+				}
+				
+				if(telaDoJogoBlocos.getpPos10().isVisible()) {
+				frame.add(telaDoJogoBlocos.getpPos10());
+				}
+				
+				if(telaDoJogoBlocos.getpPos11().isVisible()) {
+				frame.add(telaDoJogoBlocos.getpPos11());
+				}
+				
+				if(telaDoJogoBlocos.getpPos12().isVisible()) {
+				frame.add(telaDoJogoBlocos.getpPos12());
+				}
+				
+				if(telaDoJogoBlocos.getpPos13().isVisible()) {
+				frame.add(telaDoJogoBlocos.getpPos13());
+				}
+				
+				if(telaDoJogoBlocos.getpPos14().isVisible()) {
+				frame.add(telaDoJogoBlocos.getpPos14());
+				}
+				
+				if(telaDoJogoBlocos.getpPos15().isVisible()) {
+				frame.add(telaDoJogoBlocos.getpPos15());
+				}
+				frame.add(telaDoJogoBlocos);
+				
+				TelaDoJogo telaDoJogo = new TelaDoJogo();
+				telaDoJogo.setBounds(0, 0, 660, 660);
+				frame.add(telaDoJogo.getPainelLogo());
+				frame.add(telaDoJogo);
+				
+				
+				//MovimentoDoTeclado mover = new MovimentoDoTeclado();
+				//mover.setBounds(0, 0, 660, 600);
+				//frame.add(mover);
+				//mover.movimentar();
+	}
+	
+}
+	
