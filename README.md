@@ -32,7 +32,7 @@
 ### Guia de instalação
 * Para executar o programa na linguagem Java, no qual o algoritmo foi realizado, necessita apenas de um ambiente de desenvolvimento integrado (IDE) Java, no caso do projeto, foi utilizado o Eclipse, mas pode ser usado outra plataforma, não precisando de nenhuma outra ferramenta adicional ou especial, essa plataforma de desenvolvimento pode ser obtido no link acima, mas também, pode estar sendo utilizado outros softwares para o desenvolvimento deste projeto ou similar, entretanto, para instalar o Eclipse, é necessário instalar o JDK, abaixo pode ser observado um tutorial, de como instalar o JDK e depois o Eclipse:
 
-* <a> [Tutorial de como instalar o JDK e o E o Eclipse: Necessário para o desenvolvimento dos projetos](http://linguagemc.com.br/instalando-o-eclipse-cdt-windows-8/)
+* <a> [Tutorial de como instalar o JDK e o Eclipse: Necessário para o desenvolvimento dos projetos](http://linguagemc.com.br/instalando-o-eclipse-cdt-windows-8/)
 
 ### Desenvolvimento
 * Git clone https://github.com/murilodepa/Aprendendo-Java
