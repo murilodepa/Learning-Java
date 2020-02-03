@@ -35,7 +35,7 @@
 * <a> [Tutorial de como instalar o JDK e o Eclipse: Necessário para o desenvolvimento dos projetos](http://linguagemc.com.br/instalando-o-eclipse-cdt-windows-8/)
 
 ### Desenvolvimento
-* Git clone https://github.com/murilodepa/Aprendendo-Java
+* Git clone https://github.com/murilodepa/Learning-Java.git
 * Se realizar "Download ZIP", necessita de um descompactador de arquivos.
 * Após ter instalado o Eclipse ou outro programa similar, execute-o e selecione "arquivo" e depois "abrir projeto".
 * Selecione o diretório que deseja executar onde está salvo o arquivo e depois selecione a opção abrir.
